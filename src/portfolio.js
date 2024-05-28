@@ -9,7 +9,7 @@ const about = {
   name: 'Ioannis Bekiaris',
   role: 'Aspiring Software Developer',
   description:
-    'I’m a physics graduate with a specialization in computer science and programming, currently aspiring to be a software engineer. I have hands-on experience in various programming languages and technologies, including JavaScript, HTML5, Python, C, C++, and React. I enjoy tackling challenging problems and building innovative projects.',
+    'I’m a physics graduate with a specialization in computer science and programming, currently aspiring to be a software engineer. I have hands-on experience in various programming languages and technologies, including JavaScript, HTML5, Python, C, C++, and React. I enjoy tackling challenging problems and building innovative projects. A small fun fact about me is that I geek out with IoT and all kinds of things that are possible with coding and embedded programming.',
   resume: '',
   social: {
     linkedin: 'https://linkedin.com/in/ioannis-bekiaris-737894277/',
@@ -21,28 +21,52 @@ const projects = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
   {
-    name: 'Project 1',
+    name: 'Full Stack Contacts App',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'An introductory application designed to demonstrate CRUD operations by creating an API with a database and using it with React.',
+    stack: ['Node.js', 'Express.js', 'React', 'SQLite', 'CSS', 'HTML', 'JavaScript', 'Python'],
+    sourceCode: 'https://github.com/Bekathunder215/FullStackContactApp',
+    livePreview: '',
   },
   {
-    name: 'Project 2',
+    name: 'Machine Learning',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'This repository includes small scripts focused on learning and correctly applying machine learning concepts using Pytorch. The projects range from basic linear and logistic regression to more advanced topics like transfer learning and custom datasets, implementations of fully connected linear neural networks and convolutional neural networks.',
+    stack: ['Pytorch', 'Torchvision', 'Numpy', 'Pandas', 'ssl'],
+    sourceCode: 'https://github.com/Bekathunder215/Pytorch-and-ML-mini-projects',
+    livePreview: '',
   },
   {
-    name: 'Project 3',
+    name: 'JavaScript',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'This repository includes various small projects implemented in JavaScript. The focus is on demonstrating core concepts and basic programming skills through interactive web applications and games.',
+    stack: ['HTML', 'JavaScript', 'CSS'],
+    sourceCode: 'https://github.com/Bekathunder215/Javascript',
+    livePreview: '',
+  },
+  {
+    name: 'C and Cpp',
+    description:
+      'This repository includes various small projects implemented in C and C++. The focus is on demonstrating core concepts and basic programming skills essential for an embedded software engineering role.',
+    stack: ['C', 'Cpp'],
+    sourceCode: 'https://github.com/Bekathunder215/C-and-Cpp',
+    livePreview: '',
+  },
+  {
+    name: 'Python',
+    description:
+      'This repository is a compilation of various Python projects aimed at practicing and enhancing Python programming skills. Each project focuses on different aspects of Python, ranging from basic algorithms to more complex applications.',
+    stack: ['Python', 'OpenCV', 'Pygame', 'various std libraries'],
+    sourceCode: 'https://github.com/Bekathunder215/python',
+    livePreview: '',
+  },
+  {
+    name: 'React',
+    description:
+      'This repository is a compilation of various small React projects aimed at practicing and enhancing React development skills. Each project focuses on different aspects of React, ranging from basic components to more complex applications.',
+    stack: ['React', 'JavaScript', 'CSS', 'HTML'],
+    sourceCode: 'https://github.com/Bekathunder215/React',
+    livePreview: '',
   },
 ]
 
@@ -54,18 +78,28 @@ const skills = [
   'JavaScript',
   'TypeScript',
   'React',
-  'Redux',
-  'SASS',
+  'Python',
+  'Flask',
   'Material UI',
+  'C',
+  'Cpp',
+  'Machine Learning',
+  'Large Language Models',
   'Git',
   'CI/CD',
-  'Jest',
-  'Enzyme',
+  'Matlab',
+  'Node.js',
+  'Arduino',
+  'Office Pack',
+  'Troubleshooting',
+  'Communication',
+  'Build Strong Relationships',
 ]
 
 const contact = {
   // email is optional - if left empty Contact section won't show up
-  email: 'johnsmith@mail.com',
+  email: 'johnbekiaris13@gmail.com',
+  sms: '+4593956980'
 }
 
 export { about, contact, header, projects, skills }

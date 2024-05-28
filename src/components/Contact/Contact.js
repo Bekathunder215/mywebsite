@@ -12,6 +12,13 @@ const Contact = () => {
           Email me
         </span>
       </a>
+      <br/>
+      Call or Text me <br/>
+      <a href={`call:${contact.sms}`}>
+        <span type='button' className='btn btn--outline'>
+          {contact.sms}
+        </span>
+      </a>
     </section>
   )
 }
