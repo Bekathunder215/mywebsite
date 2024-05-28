@@ -2,7 +2,7 @@
   "name": "my_portofolio_app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bekathunder215.github.io/my_portofolio_app",
+  "homepage": "https://bekathunder215.github.io/mywebsite",
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
