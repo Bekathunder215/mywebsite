@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://Bekathunder215.github.io/mywebsite",
   "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@material-ui/icons": "^4.11.3",
@@ -42,6 +43,8 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "eslint-config-react-app": "^7.0.1",
     "gh-pages": "^6.1.1"
   }
 }
