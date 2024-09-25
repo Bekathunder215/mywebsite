@@ -67,7 +67,16 @@ const projects = [
     stack: ['React', 'JavaScript', 'CSS', 'HTML'],
     sourceCode: 'https://github.com/Bekathunder215/React',
     livePreview: '',
+  },  
+  {
+    name: 'Predictive Maintenance with ML',
+    description:
+      'Naval vessels rely on complex engines that require timely maintenance to ensure optimal performance. This project implements a neural network model to predict the decay state coefficients of key engine components based on various sensor readings. The project also includes data cleaning, heatmap visualizations, and a PyTorch-based model to make predictions.',
+    stack: ['Pytorch', 'Scikit-learn', 'Numpy', 'Pandas', 'Seaborn', 'Matplotlib'],
+    sourceCode: 'https://github.com/Bekathunder215/vessel-predictive-maintenance-ml',
+    livePreview: '',
   },
+
 ]
 
 const skills = [
