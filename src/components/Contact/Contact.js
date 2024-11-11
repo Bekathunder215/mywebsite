@@ -23,7 +23,7 @@ const Contact = () => {
       <h2>View My CV</h2>
       <p>You can View my CV in PDF format below:</p>
       <a
-        href="/IoannisBekiarisCV.pdf"
+        href={contact.CV}
         target="_blank"
         rel="noopener noreferrer"
         className="btn btn--outline"
