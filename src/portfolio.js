@@ -126,7 +126,7 @@ const contact = {
   // email is optional - if left empty Contact section won't show up
   email: "johnbekiaris13@gmail.com",
   sms: "+4593956980",
-  CV: "/mywebsite/IoannisBekiaris.pdf"
+  CV: "/mywebsite/IoannisBekiarisCV.pdf"
 };
 
 export { about, contact, header, projects, skills };
