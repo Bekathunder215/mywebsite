@@ -19,6 +19,10 @@ const Contact = () => {
           {contact.sms}
         </span>
       </a>
+      <br/>
+      <h2>View My CV</h2>
+      <p>You can View my CV in PDF format below:</p>
+      <a href="mywebsite/IoannisBekiarisCV.pdf" target="_blank" rel="noopener noreferrer" className='btn btn--outline'>View CV</a>
     </section>
   )
 }
