@@ -7,7 +7,7 @@ const header = {
 const about = {
   // all the properties are optional - can be left empty or deleted
   name: "Ioannis Bekiaris",
-  role: "Aspiring Software Developer",
+  role: "Artificial Inteligence Master student",
   description:
     "I’m a physics graduate with a specialization in computer science and programming, currently aspiring to be a software engineer. I have hands-on experience in various programming languages and technologies, including JavaScript, HTML5, Python, C, C++, and React. I enjoy tackling challenging problems and building innovative projects. A small fun fact about me is that I geek out with IoT and all kinds of things that are possible with coding and embedded programming.",
   resume: "",
