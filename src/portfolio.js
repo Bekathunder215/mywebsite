@@ -1,7 +1,7 @@
 const header = {
   // all the properties are optional - can be left empty or deleted
   homepage: "https://bekathunder215.github.io/mywebsite/",
-  title: "JS.",
+  title: "B.I.",
 };
 
 const about = {
@@ -9,7 +9,7 @@ const about = {
   name: "Ioannis Bekiaris",
   role: "Artificial Inteligence Master student",
   description:
-    "I’m a physics graduate with a specialization in computer science and programming, currently aspiring to be a software engineer. I have hands-on experience in various programming languages and technologies, including JavaScript, HTML5, Python, C, C++, and React. I enjoy tackling challenging problems and building innovative projects. A small fun fact about me is that I geek out with IoT and all kinds of things that are possible with coding and embedded programming.",
+    "I’m a master's student in Human-Centered Artificial Intelligence at DTU with a background in physics. I’m passionate about machine learning, data science, and software development, with hands-on experience in various programming languages and technologies, including Python, JavaScript, React, and C++. I thrive on solving intricate problems, developing intelligent systems, and continuously enhancing my technical skills. A small fun fact about me is that I geek out with IoT and all the possibilities of coding and embedded programming.",
   resume: "",
   social: {
     linkedin: "https://linkedin.com/in/ioannis-bekiaris-737894277/",
@@ -20,6 +20,13 @@ const about = {
 const projects = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
+  {
+    "name": "2048 AI Solver",
+    "description": "Implemented the 2048 game using Pygame and developed an AI using the Minimax algorithm. Working on optimizing with heuristics and dynamic tile generation.",
+    "stack": ["Python", "Pygame", "Minimax Algorithm"],
+    "sourceCode": "https://github.com/Bekathunder215/DTU_Intro_to_AI",
+    "livePreview": ""
+  },
   {
     name: "Full Stack Contacts App",
     description:
@@ -41,9 +48,25 @@ const projects = [
     name: "Machine Learning",
     description:
       "This repository includes small scripts focused on learning and correctly applying machine learning concepts using Pytorch. The projects range from basic linear and logistic regression to more advanced topics like transfer learning and custom datasets, implementations of fully connected linear neural networks and convolutional neural networks.",
-    stack: ["Pytorch", "Torchvision", "Numpy", "Pandas", "ssl"],
+    stack: ["Pytorch", "Torchvision", "Numpy", "Pandas", "Tensorflow", "Search Algorithms"],
     sourceCode:
       "https://github.com/Bekathunder215/Pytorch-and-ML-mini-projects",
+    livePreview: "",
+  },
+  {
+    name: "Predictive Maintenance with ML",
+    description:
+      "Naval vessels rely on complex engines that require timely maintenance to ensure optimal performance. This project implements a neural network model to predict the decay state coefficients of key engine components based on various sensor readings. The project also includes data cleaning, heatmap visualizations, and a PyTorch-based model to make predictions.",
+    stack: [
+      "Pytorch",
+      "Scikit-learn",
+      "Numpy",
+      "Pandas",
+      "Seaborn",
+      "Matplotlib",
+    ],
+    sourceCode:
+      "https://github.com/Bekathunder215/vessel-predictive-maintenance-ml",
     livePreview: "",
   },
   {
@@ -76,22 +99,6 @@ const projects = [
       "This repository is a compilation of various small React projects aimed at practicing and enhancing React development skills. Each project focuses on different aspects of React, ranging from basic components to more complex applications.",
     stack: ["React", "JavaScript", "CSS", "HTML"],
     sourceCode: "https://github.com/Bekathunder215/React",
-    livePreview: "",
-  },
-  {
-    name: "Predictive Maintenance with ML",
-    description:
-      "Naval vessels rely on complex engines that require timely maintenance to ensure optimal performance. This project implements a neural network model to predict the decay state coefficients of key engine components based on various sensor readings. The project also includes data cleaning, heatmap visualizations, and a PyTorch-based model to make predictions.",
-    stack: [
-      "Pytorch",
-      "Scikit-learn",
-      "Numpy",
-      "Pandas",
-      "Seaborn",
-      "Matplotlib",
-    ],
-    sourceCode:
-      "https://github.com/Bekathunder215/vessel-predictive-maintenance-ml",
     livePreview: "",
   },
 ];
