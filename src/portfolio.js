@@ -10,7 +10,7 @@ const about = {
     role: 'Artificial Inteligence Master student',
     description:
         "I’m a master's student in Human-Centered Artificial Intelligence at DTU with a background in physics. Currently I am working as a Junior Software Enginner at a cybersecurity company developing and maintaining backend services. I’m passionate about machine learning, data science, and software development, with hands-on experience in various programming languages and technologies, including Python, JavaScript, React, and C++. I thrive on solving intricate problems, developing intelligent systems, and continuously enhancing my technical skills. A small fun fact about me is that I geek out with IoT and all the possibilities of coding and embedded programming.",
-    resume: '',
+    resume: '/mywebsite/IoannisBekiarisCV.pdf',
     social: {
         linkedin: 'https://linkedin.com/in/ioannis-bekiaris-737894277/',
         github: 'https://github.com/Bekathunder215',
@@ -113,9 +113,9 @@ const skills = [
 
 const contact = {
     // email is optional - if left empty Contact section won't show up
-    email: 'johnbekiaris13@gmail.com',
-    sms: '+4593956980',
-    CV: '/mywebsite/IoannisBekiarisCV.pdf',
+    //email: 'johnbekiaris13@gmail.com',
+    //sms: '+4593956980',
+    //CV: '/mywebsite/IoannisBekiarisCV.pdf',
 };
 
 export { about, contact, header, projects, skills };
