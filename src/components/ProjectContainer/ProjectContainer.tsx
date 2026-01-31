@@ -1,9 +1,20 @@
-import uniqid from "uniqid";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LaunchIcon from "@mui/icons-material/Launch";
 import "./ProjectContainer.css";
 
-const ProjectContainer = ({ project }) => (
+interface ProjectType {
+  name: string;
+  description?: string;
+  stack?: string[];
+  sourceCode?: string;
+  livePreview?: string;
+}
+
+interface ProjectContainerProps {
+  project: ProjectType;
+}
+
+const ProjectContainer: React.FC<ProjectContainerProps> = ({ project }) => (
   <div className="project">
     <h3>{project.name}</h3>
 
@@ -11,7 +22,7 @@ const ProjectContainer = ({ project }) => (
     {project.stack && (
       <ul className="project__stack">
         {project.stack.map((item) => (
-          <li key={uniqid()} className="project__stack-item">
+          <li key={item} className="project__stack-item">
             {item}
           </li>
         ))}

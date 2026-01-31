@@ -3,8 +3,22 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { about } from "../../portfolio";
 import "./About.css";
 
-const About = () => {
-  const { name, role, description, resume, social } = about;
+interface Social {
+  github?: string;
+  linkedin?: string;
+  [key: string]: string | undefined;
+}
+
+interface AboutType {
+  name?: string;
+  role?: string;
+  description?: string;
+  resume?: string;
+  social?: Social;
+}
+
+const About: React.FC = () => {
+  const { name, role, description, resume, social } = about as AboutType;
 
   return (
     <div className="about center">
@@ -19,10 +33,13 @@ const About = () => {
 
       <div className="about__contact center">
         {resume && (
-          <a href={resume}>
-            <span type="button" className="btn btn--outline">
-              Resume
-            </span>
+          <a
+            href={resume}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn--outline"
+          >
+            Resume
           </a>
         )}
 

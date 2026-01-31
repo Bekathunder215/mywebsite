@@ -3,23 +3,25 @@ import Brightness2Icon from "@mui/icons-material/Brightness2";
 import WbSunnyRoundedIcon from "@mui/icons-material/WbSunnyRounded";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import { ThemeContext } from "../../contexts/theme";
+import { ThemeContext } from "../../contexts/themeContext";
 import { projects, skills, contact } from "../../portfolio";
 import "./Navbar.css";
 
-const Navbar = () => {
-  const [{ themeName, toggleTheme }] = useContext(ThemeContext);
-  const [showNavList, setShowNavList] = useState(false);
+const Navbar: React.FC = () => {
+  const { themeName, toggleTheme } = useContext(ThemeContext);
+  const [showNavList, setShowNavList] = useState<boolean>(false);
 
-  const toggleNavList = () => setShowNavList(!showNavList);
+  const toggleNavList = () => {
+    setShowNavList((prev) => !prev);
+  };
 
   return (
     <nav className="center nav">
       <ul
-        style={{ display: showNavList ? "flex" : null }}
         className="nav__list"
+        style={{ display: showNavList ? "flex" : undefined }}
       >
-        {projects.length ? (
+        {projects.length > 0 && (
           <li className="nav__list-item">
             <a
               href="#projects"
@@ -29,9 +31,9 @@ const Navbar = () => {
               Projects
             </a>
           </li>
-        ) : null}
+        )}
 
-        {skills.length ? (
+        {skills.length > 0 && (
           <li className="nav__list-item">
             <a
               href="#skills"
@@ -41,9 +43,9 @@ const Navbar = () => {
               Skills
             </a>
           </li>
-        ) : null}
+        )}
 
-        {contact.email ? (
+        {!!contact && contact.email && (
           <li className="nav__list-item">
             <a
               href="#contact"
@@ -53,7 +55,7 @@ const Navbar = () => {
               Contact
             </a>
           </li>
-        ) : null}
+        )}
       </ul>
 
       <button
